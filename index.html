@@ -8,7 +8,8 @@
 <body>
   <main class="shell">
     <header class="top"><div class="brandmark">SR</div><span>SMART<span class="accent">REVIEW</span></span></header>
-    <section class="card" id="reviewCard">
+    <section class="card" id="scanCard"><div class="eyebrow">COMECE POR AQUI</div><h1>Identifique o estabelecimento.</h1><p class="intro">Leia o QR Code disponibilizado pelo estabelecimento para acessar a avaliação.</p><button class="primary" id="scanBtn" type="button">Escanear QR Code <span>▦</span></button><div id="scanner" class="scanner hidden"></div><p id="scanStatus" class="privacy"></p><label for="qrInput">Ou cole o link do QR Code</label><input id="qrInput" class="qr-input" placeholder="https://..." type="url"><button class="secondary" id="manualBtn" type="button">Abrir link</button></section>
+    <section class="card hidden" id="reviewCard">
       <div class="eyebrow">FEEDBACK DE EXPERIÊNCIA</div>
       <h1 id="headline">Sua experiência<br>faz a diferença.</h1>
       <p class="intro" id="intro">Conte como foi sua experiência. Sua opinião é importante para nós.</p>
@@ -38,5 +39,5 @@
     </section>
     <footer><span id="footerName">Experiência de feedback</span><span>Powered by <strong>SmartReview</strong></span></footer>
   </main>
-  <script src="app.js"></script>
+  <script src="https://unpkg.com/html5-qrcode@2.3.8/html5-qrcode.min.js"></script><script src="app.js"></script>
 </body></html>
