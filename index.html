@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101827"><meta name="description" content="Compartilhe sua experiência. Seu feedback nos ajuda a melhorar.">
+  <title>SmartReview</title><link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="top"><div class="brandmark">SR</div><span>SMART<span class="accent">REVIEW</span></span></header>
+    <section class="card" id="reviewCard">
+      <div class="eyebrow">FEEDBACK DE EXPERIÊNCIA</div>
+      <h1 id="headline">Sua experiência<br>faz a diferença.</h1>
+      <p class="intro" id="intro">Conte como foi sua experiência. Sua opinião é importante para nós.</p>
+      <div class="rating-block"><label>Como você avalia sua experiência?</label>
+        <div class="stars" role="radiogroup" aria-label="Nota de 1 a 5 estrelas">
+          <button type="button" class="star" data-value="1" aria-label="1 estrela" aria-checked="false" role="radio">★</button>
+          <button type="button" class="star" data-value="2" aria-label="2 estrelas" aria-checked="false" role="radio">★</button>
+          <button type="button" class="star" data-value="3" aria-label="3 estrelas" aria-checked="false" role="radio">★</button>
+          <button type="button" class="star" data-value="4" aria-label="4 estrelas" aria-checked="false" role="radio">★</button>
+          <button type="button" class="star" data-value="5" aria-label="5 estrelas" aria-checked="false" role="radio">★</button>
+        </div><div id="ratingLabel" class="rating-label">Selecione uma nota</div>
+      </div>
+      <form id="feedbackForm">
+        <label for="comment">Quer compartilhar algum detalhe? <span class="optional">(opcional)</span></label>
+        <textarea id="comment" maxlength="1000" rows="4" placeholder="Conte um pouco sobre sua experiência..."></textarea>
+        <div class="counter"><span id="count">0</span>/1000</div>
+        <button class="primary" type="submit" id="submitBtn" disabled>Continuar <span>→</span></button>
+      </form>
+      <p class="privacy">Este formulário não envia nem armazena seus dados. O feedback digitado não será transmitido ao estabelecimento por esta versão do projeto.</p>
+    </section>
+    <section class="card success hidden" id="successCard" aria-live="polite">
+      <div class="success-icon">✓</div><div class="eyebrow">OBRIGADO POR PARTICIPAR</div>
+      <h1>Obrigado por compartilhar!</h1>
+      <p id="successText">Você também pode compartilhar sua experiência publicamente no Google.</p>
+      <a class="primary link-button" id="googleLink" href="#" target="_blank" rel="noopener noreferrer">Avaliar no Google <span>↗</span></a>
+      <button class="secondary" id="backBtn" type="button">Voltar</button>
+    </section>
+    <footer><span id="footerName">Experiência de feedback</span><span>Powered by <strong>SmartReview</strong></span></footer>
+  </main>
+  <script src="app.js"></script>
+</body></html>
