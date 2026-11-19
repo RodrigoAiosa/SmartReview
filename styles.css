@@ -9,3 +9,5 @@ textarea{display:block;width:100%;margin-top:12px;background:#0b1220;border:1px 
 @media(max-width:480px){body{padding:16px 12px}.top{margin:10px 4px 18px}.card{border-radius:20px}.stars{justify-content:space-between;gap:2px}.star{padding:0 5px}}
 
 .scanner{width:100%;min-height:250px;margin:18px 0;overflow:hidden;border-radius:14px;background:#080d18}.qr-input{display:block;width:100%;margin:10px 0 12px;background:#0b1220;border:1px solid var(--border);border-radius:12px;padding:14px;color:var(--text);font:inherit}.secondary{margin-top:8px}
+
+.suggestions{margin:0 0 24px;padding:18px;border:1px solid rgba(255,200,87,.22);border-radius:14px;background:rgba(255,200,87,.045)}.suggestions>label{font-size:14px;font-weight:700}.suggestion-note{color:var(--muted);font-size:12px;margin:8px 0 12px}.suggestion{display:block;width:100%;text-align:left;color:var(--text);font:inherit;line-height:1.5;padding:12px;margin:8px 0;background:#0b1220;border:1px solid var(--border);border-radius:12px;cursor:pointer}.suggestion:hover{border-color:var(--accent2)}
